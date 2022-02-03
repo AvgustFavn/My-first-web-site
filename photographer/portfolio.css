@@ -1,0 +1,209 @@
+@font-face {
+  font-family: XtrudeRegular;
+  src: url('fonts/XtrudeRegular.ttf');
+}
+
+@font-face {
+  font-family: IniyaDisplay;
+  src: url('fonts/IniyaDisplay.otf');
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  /* height: 100vh; */
+}
+
+
+/* Navigation menu */
+nav {
+  font-family: IniyaDisplay;
+  color: rgb(232, 218, 201);
+  background-color: rgb(90, 67, 38);
+  width: 15%;
+  height: 100vh;
+  padding: 10% 5% 0;
+  box-sizing: border-box;
+}
+
+/* Lighter part of site */
+main {
+  background-color: rgb(166, 129, 63);
+  width: 85%;
+  height: 100vh;
+  padding: 5px;
+  display: flex;
+  box-sizing: border-box;
+  font-family: IniyaDisplay;
+  color: rgb(232, 218, 201);
+  text-shadow: 3px 2px 0px rgba(90, 67, 38, 60%);
+}
+
+/* Same part, but right section */
+section {
+  width: 900px;
+  height: 90%;
+  border-left: 3px double rgb(90, 67, 38);
+  padding: 15px;
+  box-sizing: border-box;
+
+
+}
+
+/* For all links */
+a {
+  color: rgb(232, 218, 201);
+  text-shadow: 3px 2px 0px rgba(90, 67, 38, 60%);
+  text-decoration: underline;
+
+}
+
+/* Highlight text in the menu */
+.menu:hover {
+  color: rgb(247, 243, 237);
+  text-shadow: 3px 3px 4px rgba(247, 243, 237, 50%);
+}
+
+/* For "Hello there" */
+h3:hover {
+  font-size: 21px;
+
+
+}
+
+/* Doing smaller punctuation marks and date in bottom section into menu */
+span {
+  font-size: 10px;
+}
+
+/* Also in bottom sec my signature */
+#creator {
+  font-family: XtrudeRegular;
+  color: rgb(166, 129, 63);
+  font-size: 20px;
+  margin-top: 300px;
+  line-height: 12px;
+}
+
+/* leaf on menu */
+#leafs {
+  width: 140%;
+  margin-left: -12%;
+}
+
+#eighth {
+  height: 105%;
+
+}
+/* ############################################ */
+/* Here, i did a gallary */
+
+.cssSlider {
+	display: block;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+  margin: 5%;
+  box-sizing: border-box;
+}
+.cssSlider .slides {
+	overflow: hidden;
+	/* overflow: hidden; */
+	width: 100%;
+	height: 70vmin;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.cssSlider .slides > li {
+	width: 100%;
+	height: 70vmin;
+	position: absolute;
+	z-index: 1;
+	overflow: hidden;
+}
+.cssSlider .slides > li > img {
+	width: 100%;
+	height: auto;
+}
+/*
+.cssSlider .slides > li:first-child:not(:target) {
+	z-index: 1;
+	-webkit-transform: translateY(0%);
+	        transform: translateY(0%);
+}
+*/
+.cssSlider .thumbnails {
+	/* display: block; */
+  display: flex;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.cssSlider .thumbnails > li {
+	/* float: left; */
+  display: flex;
+	width: 20%;
+}
+.cssSlider .thumbnails > li > a {
+	display: block;
+}
+.cssSlider .thumbnails > li > a > img {
+	width: 100%;
+	height: auto;
+}
+
+.cssSlider .slides li:target {
+	z-index: 3;
+	-webkit-animation: slide 1s 1;
+}
+.cssSlider .slides li:not(:target) {
+	-webkit-animation: hidden 1s 1;
+}
+@-webkit-keyframes slide {
+	0% {
+		-webkit-transform: translateX(-100%);
+		        transform: translateX(-100%);
+	}
+	100% {
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
+	}
+}
+@keyframes slide {
+	0% {
+		-webkit-transform: translateX(-100%);
+		        transform: translateX(-100%);
+	}
+	100% {
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
+	}
+}
+@-webkit-keyframes hidden {
+	0% {
+		z-index: 2;
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
+	}
+	100% {
+		z-index: 2;
+		-webkit-transform: translateX(100%);
+		        transform: translateX(100%);
+	}
+}
+@keyframes hidden {
+	0% {
+		z-index: 2;
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
+	}
+	100% {
+		z-index: 2;
+		-webkit-transform: translateX(100%);
+		        transform: translateX(100%);
+	}
+}
