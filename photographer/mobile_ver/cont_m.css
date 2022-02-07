@@ -1,0 +1,53 @@
+@font-face {
+  font-family: XtrudeRegular;
+  src: url('../fonts/XtrudeRegular.ttf');
+}
+
+@font-face {
+  font-family: IniyaDisplay;
+  src: url('../fonts/IniyaDisplay.otf');
+}
+
+body {
+  background-color: rgb(90, 67, 38);
+  margin: 3%;
+  width: 100vw;
+  height: 100vh;
+  font-family: IniyaDisplay;
+  color: rgb(232, 218, 201);
+  text-shadow: 3px 2px 0px rgba(90, 67, 38, 60%);
+}
+
+.menu {
+  display: block;
+}
+
+a {
+  color: rgb(232, 218, 201);
+  text-shadow: 3px 2px 0px rgba(90, 67, 38, 60%);
+  text-decoration: underline;
+
+}
+
+.info_about {
+  display: block;
+}
+
+.creator {
+  width: 400px;
+}
+
+.menucreator {
+  font-family: XtrudeRegular;
+  color: rgb(166, 129, 63);
+  font-size: 120%;
+}
+
+span {
+  font-size: 10px;
+}
+
+h2, h3, h1 {
+  background-color: rgb(108, 80, 45);
+
+}
